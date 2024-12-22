@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #363835e6;
+}
+img.lop:hover{
+    box-shadow: 12px 8px 12px gray;
+}
+
+header {
+    background-color: #333;
+    color: #e7e736d2;
+    padding: 10px 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+a:hover{
+    color: #5ff900;
+}
+button{
+    background-color: #007bff;
+    border-radius: 15px;
+    box-shadow: #007bff;
+   
+    
+}
+button:hover {
+    background-color: #00f9f1;
+}
+
+table{
+    border-spacing: 92px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 50px;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+.hero {
+   
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    margin: 0 0 20px;
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin: 0 0 20px;
+    font-size: 1.2em;
+}
+.features {
+    background-color:rgba(0, 247, 255, 0.749);
+    padding: 50px 0;
+    background-image: url('');  
+    background-repeat: no-repeat;
+    
+    
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.features .feature {
+    max-width: 300px;
+}
+
+.features h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.about{
+    text-align: left;
+    text-align: justify;
+    font-size: 10px;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Gadget Galaxy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .main-content h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .card {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#products">Manage Products</a>
+        <a href="#orders">Manage Orders</a>
+        <a href="#users">Manage Users</a>
+        <a href="#settings">Settings</a>
+        <a href="Login.html">Logout</a>
+    </div>
+    <div class="main-content">
+        <h1>Welcome to Gadget Galaxy Admin Panel</h1>
+        <div class="card" id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Overview of sales, orders, and site traffic</p>
+        </div>
+        <div class="card" id="products">
+            <h2>Manage Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Apple 2020 Macbook Air Apple M1
+                            (8 GB/256 GB SSD/Mac OS Big Sur)
+                             MGN63HN/A  (13.3 inch, Space Grey, 1.29 kg)</td>
+                        <td>₹71,990</td>
+                        <td>25</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Apple 2022 MacBook AIR Apple M2
+                            (8 GB/256 GB SSD/Mac OS Monterey) 
+                            MLY33HN/A  (13.6 Inch, Midnight, 1.24 Kg)</td>
+                        <td>₹1,09,990</td>
+                        <td>50</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Apple MacBook Air Apple M3<br>
+                            (8 GB/256 GB SSD/macOS Sonoma) <br>
+                            MRXT3HN/A  (13 Inch, Starlight, 1.24 Kg)</td>
+                        <td>₹1,05,490</td>
+                        <td>50</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Apple 2023 Macbook Air Apple M2
+                            (8 GB/512 GB SSD/macOS Ventura) MQKT3HN/A  (15.3 Inch, Silver, 1.51 Kg)</td>
+                        <td>₹1,15,990</td>
+                        <td>50</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Apple 2022 MacBook AIR Apple M2
+                            (8 GB/512 GB SSD/Mac OS Monterey) MLXX3HN/A  (13.6 Inch, Space Grey, 1.24 Kg)</td>
+                        <td>₹96,990</td>
+                        <td>50</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Apple 2023 MacBook Pro Apple M3 Pro
+                            (18 GB/512 GB SSD/macOS Sonoma) MRX33HN/A  (14 Inch, Space Black, 1.61 kg)</td>
+                        <td>₹1,55,890</td>
+                        <td>50</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card" id="orders">
+            <h2>Manage Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Product</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>John Doe</td>
+                        <td>Apple 2023 MacBook Pro Apple M3 Pro
+                            (18 GB/512 GB SSD/macOS Sonoma) MRX33HN/A  (14 Inch, Space Black, 1.61 kg)</td>
+                        <td>Shipped</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Jane Smith</td>
+                        <td>Apple 2023 Macbook Air Apple M2
+                            (8 GB/512 GB SSD/macOS Ventura) MQKT3HN/A  (15.3 Inch, Silver, 1.51 Kg)</td>
+                        <td>Processing</td>
+                        <td><button>View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card" id="users">
+            <h2>Manage Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>501</td>
+                        <td>john_doe</td>
+                        <td>john@example.com</td>
+                        <td>Admin</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>502</td>
+                        <td>jane_smith</td>
+                        <td>jane@example.com</td>
+                        <td>Customer</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>

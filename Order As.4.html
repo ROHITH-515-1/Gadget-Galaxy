@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page - Gadget Galaxy</title>
+    <style>
+
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f3f3;
+      margin: 0;
+      padding: 0;
+        }
+    header {
+      background-color: #333;
+      color: #e7e736d2;
+      padding: 10px 0;
+}
+header .containe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .containe {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+        .container {
+            
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px,20px,40px,20px;
+            box-shadow: 20px 20px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        .details {
+            margin-left: 20px;
+        }
+        .details h3 {
+            margin-top: 0;
+        }
+        th, td {
+           padding-top: 10px;
+           padding-bottom: 10px;
+           padding-left: 40px;
+           padding-right: 40px;
+        }
+        i{
+            font-size: 30px;
+        }
+        .order-form {
+            background-color: #f9f9f90b;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .order-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .order-form input[type="text"],
+        .order-form input[type="email"],
+        .order-form input[type="number"],
+        .order-form select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .order-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .order-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="containe">
+            <h1>Gadget Galaxy</h1>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="All product.html">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Place Your Order</h1>
+
+        <div class="product">
+            <img src="As.4.png">
+        </div>
+            <div class="details">
+                <p>Price:₹59,990</p>
+                <center>
+                <i>Specification</i></center>
+                <br>
+                <table >
+                    <tr>
+                        <td>Sales Package</td>
+                        <td>Laptop, Power Adaptor, User Guide, Warranty Documents</td>
+                    </tr>
+                    <tr>
+                        <td>Model Number</td>
+                        <td>FX506LH-HN258T</td>
+                    </tr>
+                    <tr>
+                        <td>Part Number</td>
+                        <td>90NR03U2-M07840</td>
+                    </tr>
+                    <tr>
+                        <td>Series</td>
+                        <td>TUF Gaming F15</td>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>Black Plastic</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>Gaming Laptop</td>
+                    </tr>
+                    <tr>
+                        <td>Suitable For</td>
+                        <td>Gaming</td>
+                    </tr>
+                    <tr>
+                        <td>TGP</td>
+                        <td>50W</td>
+                    </tr>
+                </table>
+            </div>
+      
+
+        <div class="order-form">
+            <h2>Order Form</h2>
+            <form action="Orderconform.html">
+                <label>Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label>Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Shipping Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label>Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <label>Payment Method:</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+
+                <input type="submit" value="Place Order">
+            </form>
+        </div>
+    </div>  
+    <footer>
+        <div class="containe">
+            <p>&copy; 2024 Gadget Galaxy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

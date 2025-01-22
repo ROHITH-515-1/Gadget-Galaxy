@@ -1,0 +1,68 @@
+<style>
+.login-container { border-radius: 50px; background-color: #ffede1; padding: 0 80px 0 0; overflow: hidden; }
+.login-content { display: flex; gap: 20px; }
+.login-form-column { display: flex; flex-direction: column; width: 62%; }
+.login-form-wrapper { background-color: #fff; display: flex; flex-grow: 1; flex-direction: column; font-family: Poppins, sans-serif; color: #000; font-weight: 400; width: 100%; }
+.login-form-content { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 167px 80px; }
+.login-form { border-radius: 20px; background-color: #fff; box-shadow: 0 19px 40px rgba(0, 0, 0, 0.05); display: flex; margin-bottom: -33px; width: 598px; max-width: 100%; flex-direction: column; padding: 83px 60px; }
+.logo { color: #f47458; font-size: 36px; font-weight: 600; align-self: flex-start; }
+.welcome-text { color: rgba(0, 0, 0, 0.5); font-size: 16px; line-height: 1; letter-spacing: 0.48px; align-self: flex-start; margin-top: 60px; }
+.signin-heading { font-size: 56px; font-weight: 600; align-self: flex-start; margin-top: 10px; }
+.form-label { font-size: 16px; font-weight: 300; align-self: flex-start; margin-top: 30px; }
+.form-input { border-radius: 4px; background-color: #fff6f4; margin-top: 7px; font-size: 14px; padding: 13px 10px; width: 100%; border: none; }
+.password-wrapper { display: flex; margin-top: 20px; gap: 20px; font-weight: 300; justify-content: space-between; }
+.forgot-password { font-size: 14px; text-align: right; }
+.signin-button { border-radius: 23px; background-color: #f47458; align-self: center; display: flex; margin-top: 40px; width: 150px; max-width: 100%; gap: 18px; font-size: 16px; color: #fff; font-weight: 600; text-transform: uppercase; padding: 11px 26px; border: none; cursor: pointer; }
+.signin-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 24px; }
+.signup-link { color: rgba(0, 0, 0, 0.2); font-size: 16px; line-height: 1; letter-spacing: 0.48px; align-self: center; margin-top: 40px; }
+.signup-text { color: #f47458; }
+.image-column { display: flex; flex-direction: column; width: 38%; margin-left: 20px; }
+.login-image { aspect-ratio: 0.98; object-fit: contain; object-position: center; width: 100%; margin-top: 270px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+@media (max-width: 991px) {
+    .login-container { padding-right: 20px; }
+    .login-content { flex-direction: column; align-items: stretch; gap: 0; }
+    .login-form-column, .image-column { width: 100%; }
+    .login-form-content { max-width: 100%; padding: 100px 20px; }
+    .login-form { margin-bottom: 10px; padding: 0 20px; }
+    .welcome-text { margin: 40px 0 0 6px; }
+    .signin-heading { font-size: 40px; }
+    .form-input { max-width: 100%; padding-right: 20px; }
+    .signin-button { padding: 0 20px; }
+    .login-image { max-width: 100%; margin-top: 40px; }
+}
+</style>
+
+<section class="login-container">
+    <div class="login-content">
+        <div class="login-form-column">
+            <div class="login-form-wrapper">
+                <div class="login-form-content">
+                    <form class="login-form">
+                        <h1 class="logo">Logo Here</h1>
+                        <p class="welcome-text">Welcome back !!!</p>
+                        <h2 class="signin-heading">Sign in</h2>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="test1@gmail.com" required>
+                        <div class="password-wrapper">
+                            <label for="password" class="form-label">Password</label>
+                            <a href="#" class="forgot-password">Forgot Password ?</a>
+                        </div>
+                        <input type="password" id="password" class="form-input" placeholder="**************" required>
+                        <button type="submit" class="signin-button">
+                            Sign in
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b4db5f36fc6195c13fd2f1e38c9c53ba36e40a83b25635346262060a7dcc20b?placeholderIfAbsent=true&apiKey=2d33b8f6c50e42aeb13602bee28ccb28" alt="" class="signin-icon">
+                        </button>
+                        <p class="signup-link">
+                            I don't have an account ? <a href="#" class="signup-text">Sign up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="image-column">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1f7464fc9d07b4eab2fd903a856ccf5157e6529451dafad4e6b6c0d1f06a682?placeholderIfAbsent=true&apiKey=2d33b8f6c50e42aeb13602bee28ccb28" alt="Decorative login image" class="login-image">
+        </div>
+    </div>
+</section>
